@@ -17,7 +17,12 @@ function bind(el, binding) {
 }
 
 function resolve(el, binding) {
-  el.style[el.dataset.styleAttribute] = `${binding.value}${el.dataset.suffix}`;
+  let value = binding.value;
+  if (value != null) {
+    value = `${binding.value}${el.dataset.suffix}`;
+  }
+
+  el.style[el.dataset.styleAttribute] = value;
 }
 
 function cammelCase(attributeName) {

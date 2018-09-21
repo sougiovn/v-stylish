@@ -72,3 +72,51 @@ describe('Kebab Case arg: v-style:background-color', () => {
     });
   });
 });
+
+describe('Arg with modifier: v-style:padding.px', () => {
+  const component = {
+    template: `
+        <h1 v-style:padding.px="padding"></h1>
+      `,
+    directives: {
+      style: VStyle
+    },
+    data() {
+      return {
+        padding: null
+      };
+    }
+  };
+
+  describe('First state evaluation', () => {
+    it('null', () => {
+      const wrapper = mount(component);
+
+      expect(wrapper.find('h1').element.style.padding).toBe('');
+    });
+
+    it('10', () => {
+      const wrapper = mount(component, {
+        data() {
+          return {
+            padding: 10
+          };
+        }
+      });
+
+      expect(wrapper.find('h1').element.style.padding).toBe('10px');
+    });
+  });
+
+  describe('Update evaluation', () => {
+    const wrapper = mount(component);
+
+    it('null -> 100', () => {
+      wrapper.setData({
+        padding: 100
+      });
+
+      expect(wrapper.find('h1').element.style.padding).toBe('100px');
+    });
+  });
+});

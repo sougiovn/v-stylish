@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- "8.12.0"
+- "v8.12.0"
 - "node"
 sudo: false
 cache:
