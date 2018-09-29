@@ -1,6 +1,7 @@
 const KEBAB_REGEX = /-/g;
 
 export default {
+  name: 'style',
   bind,
   inserted: resolve,
   update: resolve

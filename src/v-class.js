@@ -1,4 +1,5 @@
 export default {
+  name: 'class',
   inserted: resolve,
   update: resolve
 }

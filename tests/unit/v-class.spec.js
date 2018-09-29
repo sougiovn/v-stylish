@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import VClass from '@/VClass';
+import vClass from '@/v-class';
 
 describe('v-class:is-blue', () => {
   const component = {
@@ -7,7 +7,7 @@ describe('v-class:is-blue', () => {
         <h1 v-class:is-blue="isBlueClassActive"></h1>
       `,
     directives: {
-      class: VClass
+      class: vClass
     },
     data() {
       return {

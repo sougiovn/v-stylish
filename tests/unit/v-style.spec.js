@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import VStyle from '@/VStyle';
+import vStyle from '@/v-style';
 
 describe('Cammel Case arg: v-style:backgroundColor', () => {
   const component = {
@@ -7,7 +7,7 @@ describe('Cammel Case arg: v-style:backgroundColor', () => {
         <h1 v-style:backgroundColor="backgroundColor"></h1>
       `,
     directives: {
-      style: VStyle
+      style: vStyle
     },
     data() {
       return {
@@ -43,7 +43,7 @@ describe('Kebab Case arg: v-style:background-color', () => {
         <h1 v-style:background-color="backgroundColor"></h1>
       `,
     directives: {
-      style: VStyle
+      style: vStyle
     },
     data() {
       return {
@@ -79,7 +79,7 @@ describe('Arg with modifier: v-style:padding.px', () => {
         <h1 v-style:padding.px="padding"></h1>
       `,
     directives: {
-      style: VStyle
+      style: vStyle
     },
     data() {
       return {

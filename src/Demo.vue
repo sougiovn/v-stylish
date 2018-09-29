@@ -43,15 +43,8 @@
 </template>
 
 <script>
-  import VClass from './VClass';
-  import VStyle from './VStyle';
-
   export default {
     name: 'Demo',
-    directives: {
-      'class': VClass,
-      'style': VStyle
-    },
     data() {
       return {
         isBlue: false,
