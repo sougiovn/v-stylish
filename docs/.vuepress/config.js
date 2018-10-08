@@ -32,16 +32,26 @@ module.exports = {
       '/': {
         selectText: 'Languages',
         label: 'English',
-        sidebar: [
-          '/'
-        ]
+        sidebar: {
+          '/': [
+            {
+              collapsable: false,
+              children: ['']
+            }
+          ]
+        }
       },
       '/pt-br/': {
         selectText: 'Languages',
         label: 'Português brasileiro',
-        sidebar: [
-          '/pt-br/'
-        ]
+        sidebar: {
+          '/pt-br/': [
+            {
+              collapsable: false,
+              children: ['']
+            }
+          ]
+        }
       }
     }
   }
