@@ -31,27 +31,11 @@ module.exports = {
     locales: {
       '/': {
         selectText: 'Languages',
-        label: 'English',
-        sidebar: {
-          '/': [
-            {
-              collapsable: false,
-              children: ['']
-            }
-          ]
-        }
+        label: 'English'
       },
       '/pt-br/': {
         selectText: 'Languages',
-        label: 'Português brasileiro',
-        sidebar: {
-          '/pt-br/': [
-            {
-              collapsable: false,
-              children: ['']
-            }
-          ]
-        }
+        label: 'Português brasileiro'
       }
     }
   }

@@ -1,6 +1,7 @@
 ---
 home: false
 sidebarDepth: 3
+sidebar: auto
 ---
 
 # v-stylish
