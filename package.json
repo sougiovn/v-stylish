@@ -1,15 +1,17 @@
 {
   "name": "v-stylish",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "main": "dist",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vStylish ./src/lib.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "coverage": "vue-cli-service test:unit --coverage",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "vue": "^2.5.17"
