@@ -1,7 +1,7 @@
 {
   "name": "v-stylish",
   "version": "1.0.0",
-  "main": "dist",
+  "main": "dist/vStylish.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vStylish ./src/lib.js",
