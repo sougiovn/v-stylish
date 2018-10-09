@@ -1,5 +1,6 @@
 module.exports = {
   title: 'v-stylish',
+  base: '/v-stylish/',
   locale: {
     '/': {
       lang: 'en-US',
