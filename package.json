@@ -1,45 +1,35 @@
 {
   "name": "v-stylish",
-  "version": "1.0.0",
-  "main": "dist/vStylish.common.js",
+  "version": "2.0.0",
+  "main": "dist/v-stylish.cjs.js",
+  "module": "dist/v-stylish.es.js",
+  "browser": "dist/v-stylish.min.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vStylish ./src/lib.js",
-    "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit",
-    "coverage": "vue-cli-service test:unit --coverage",
+    "serve": "poi src/main.js",
+    "build": "del dist && bili",
+    "test": "cross-env NODE_ENV=test && jest",
+    "coverage": "npm run test -- --coverage",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "prepublish": "npm run build",
-    "bili": "bili"
+    "docs:deploy": "sh deploy.sh"
   },
   "devDependencies": {
-    "vue": "^2.5.17",
-    "@vue/cli-plugin-babel": "^3.0.0",
-    "@vue/cli-plugin-eslint": "^3.0.0",
-    "@vue/cli-plugin-unit-jest": "^3.0.0",
-    "@vue/cli-service": "^3.0.0",
-    "@vue/test-utils": "^1.0.0-beta.20",
-    "babel-core": "7.0.0-bridge.0",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "babel-core": "^6.26.3",
     "babel-jest": "^23.0.1",
     "bili": "^3.1.2",
     "coveralls": "^3.0.2",
-    "lint-staged": "^7.2.2",
+    "cross-env": "^5.2.0",
+    "del-cli": "^1.1.0",
+    "jest": "^23.6.0",
+    "poi": "^10.2.10",
+    "vue": "^2.5.17",
     "vue-template-compiler": "^2.5.17",
     "vuepress": "^0.14.4"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+  "dependencies": {
+    "babel-preset-env": "^1.7.0"
   }
 }

@@ -6,6 +6,6 @@ sudo: false
 cache:
 - "node_modules"
 script:
-- npm run test:unit
+- npm run test
 after_script:
 - npm run coveralls
