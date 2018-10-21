@@ -5,9 +5,9 @@
   "module": "dist/v-stylish.es.js",
   "browser": "dist/v-stylish.min.js",
   "scripts": {
-    "serve": "poi src/main.js",
+    "serve": "poi demo/main.js",
     "build": "del dist && bili",
-    "test": "cross-env NODE_ENV=test && jest",
+    "test": "cross-env NODE_ENV=test && jest --no-cache",
     "coverage": "npm run test -- --coverage",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
     "docs:dev": "vuepress dev docs",

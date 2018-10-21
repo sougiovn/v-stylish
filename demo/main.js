@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Demo from './Demo';
 
-import vStylish from './lib';
+import vStylish from '@/lib';
 
 Vue.use(vStylish);
 
