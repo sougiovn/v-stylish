@@ -1,4 +1,4 @@
-# v-stylish [![Coverage Status](https://coveralls.io/repos/github/gigioSouza/v-stylish/badge.svg?branch=master)](https://coveralls.io/github/gigioSouza/v-stylish?branch=master)
+# v-stylish [![Build Status](https://travis-ci.org/gigioSouza/v-stylish.svg?branch=master)](https://travis-ci.org/gigioSouza/v-stylish) [![Coverage Status](https://coveralls.io/repos/github/gigioSouza/v-stylish/badge.svg?branch=master)](https://coveralls.io/github/gigioSouza/v-stylish?branch=master)
 
 Vue.js directives to easly manipulate dynamic classes and styles
 
