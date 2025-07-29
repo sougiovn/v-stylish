@@ -27,7 +27,7 @@
     "poi": "^10.2.10",
     "vue": "^2.5.17",
     "vue-template-compiler": "^2.5.17",
-    "vuepress": "^0.14.4"
+    "vuepress": "^1.9.10"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0"
