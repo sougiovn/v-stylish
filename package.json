@@ -19,15 +19,15 @@
     "@vue/test-utils": "^1.0.0-beta.25",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.0.1",
-    "bili": "^3.1.2",
+    "bili": "^5.0.5",
     "coveralls": "^3.0.2",
     "cross-env": "^5.2.0",
     "del-cli": "^1.1.0",
     "jest": "^23.6.0",
-    "poi": "^10.2.10",
+    "poi": "^12.10.3",
     "vue": "^2.5.17",
     "vue-template-compiler": "^2.5.17",
-    "vuepress": "^0.14.4"
+    "vuepress": "^0.14.11"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0"
